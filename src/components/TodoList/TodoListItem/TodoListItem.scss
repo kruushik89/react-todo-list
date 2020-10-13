@@ -1,0 +1,28 @@
+.TodoListItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+
+  .btn {
+    width: 35px;
+    margin-left: 15px;
+  }
+
+  .todo-list-item-label {
+    cursor: pointer;
+    line-height: 35px;
+    user-select: none;
+  }
+
+}
+
+.TodoListItem.important  .todo-list-item-label {
+  font-weight: bold;
+  color: steelblue;
+}
+
+.TodoListItem.done {
+  text-decoration: line-through;
+}
+
+
